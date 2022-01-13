@@ -37,12 +37,14 @@ rostopic info /"topic name"
 
 ### Record rosbag
 
+rosbag record /"package_names" -O "bag_path"
+Example:
 rosbag record /imu /move_base/goal -O ./ROS_Simulation_Framework_II
 
 ### Open and inspect rosbag
 
-rqt_bag 'bag_path'
+rqt_bag "bag_path"
 
 ### Replay the bags
 
-rosbag play 'rosbag_path'
+rosbag play "rosbag_path"
