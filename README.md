@@ -33,6 +33,9 @@ example: rostopic echo /move_base/status
 
 rostopic info /"topic name"
 
+## Launching Waypoints script
+rosrun turtlebot3_waypoints turtlebot3_waypoints.py
+
 ## ROS bags
 
 ### Record rosbag
