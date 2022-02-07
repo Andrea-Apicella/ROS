@@ -6,7 +6,7 @@ export TURTLEBOT3_MODEL=burger
 
 ## Opening Gazebo:
 
-roslaunch turtlebot3_gazebo turtlebot3_world.launch
+```roslaunch turtlebot3_gazebo turtlebot3_world.launch```
 
 ## Launching RViz navigation:
 
