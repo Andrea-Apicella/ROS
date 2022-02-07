@@ -44,6 +44,8 @@ rosbag record /"package_names" -O "bag_path"
 Example:
 ```rosbag record /imu /move_base/goal -O ./ROS_Simulation_Framework_II```
 
+```rosbag record /imu /gazebo/model_states -O ./bags```
+
 ### Open and inspect rosbag
 
 rqt_bag "bag_path"
