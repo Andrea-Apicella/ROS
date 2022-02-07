@@ -1,8 +1,8 @@
 # Initial commands (broadcast with option A):
 
-cd catkin_ws
-source devel/setup.bash
-export TURTLEBOT3_MODEL=burger
+```cd catkin_ws```
+```source devel/setup.bash```
+```export TURTLEBOT3_MODEL=burger```
 
 ## Opening Gazebo:
 
@@ -10,31 +10,31 @@ export TURTLEBOT3_MODEL=burger
 
 ## Launching RViz navigation:
 
-roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
+```roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml```
 
 ## Refining map:
 
 1. use the 2D Pose Estimate tool (green arrow)
-2. launch teleop: roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+2. launch teleop: ```roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch```
 3. move the turtlebot a little bit
 
 ## Ros topics
 
 ### Listing ros topics
 
-rostopic list
+```rostopic list```
 
 ### show one topic
 
 rostopic echo /"topic name"
-example: rostopic echo /move_base/status
+example: ```rostopic echo /move_base/status```
 
 ### info on one topic
 
 rostopic info /"topic name"
 
 ## Launching Waypoints script
-rosrun turtlebot3_waypoints turtlebot3_waypoints.py
+```rosrun turtlebot3_waypoints turtlebot3_waypoints.py```
 
 ## ROS bags
 
@@ -42,7 +42,7 @@ rosrun turtlebot3_waypoints turtlebot3_waypoints.py
 
 rosbag record /"package_names" -O "bag_path"
 Example:
-rosbag record /imu /move_base/goal -O ./ROS_Simulation_Framework_II
+```rosbag record /imu /move_base/goal -O ./ROS_Simulation_Framework_II```
 
 ### Open and inspect rosbag
 
